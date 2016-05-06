@@ -1,5 +1,5 @@
 
-function replace() {
+function terminalLike() {
     var terminals = document.getElementsByClassName('terminal-like');
     var new_terminals = [];
     [].forEach.call(terminals, function (terminal,index) {
@@ -12,23 +12,36 @@ function replace() {
         title.innerText = 'Terminal ~';
         title.className = 'terminal-like-title';
         // terminal buttons
-        var button = document.createElement('span');
-        button.innerText = '*';
-        button.className = 'terminal-like-button';
+        var buttons = document.createElement('span');
+        buttons.className = 'terminal-like-buttons';
+        var closeButton = document.createElement('span');
+        closeButton.className = 'terminal-like-button';
+        closeButton.innerHTML = '&times;';
+        var minimizeButton = document.createElement('span')
+        minimizeButton.innerText = '_';
+        minimizeButton.className = 'terminal-like-button';
+        var maximizeButton = document.createElement('span')
+        maximizeButton.innerHTML = '&Square;';
+        maximizeButton.className = 'terminal-like-button';
+
+        buttons.appendChild(maximizeButton);
+        buttons.appendChild(minimizeButton);
+        buttons.appendChild(closeButton);
+
+
         // terminal header
         var titleBar = document.createElement('div');
         titleBar.className='terminal-like-header';
         titleBar.appendChild(title);
-        titleBar.appendChild(button);
+        titleBar.appendChild(buttons);
 
 
         // terminal body
         // append prompt to text
-        var prompt = 'sato@localhost $';
-        prompt = '<span class="prompt">'+prompt+'</span>';
-        var text = terminal.innerText;
-        text = text.split('\n').map( function(line){return (prompt+line)}).join('\n');
-        console.log(text);
+        var prompt = '[user@localhost ~]$';
+        prompt = '<span class="terminal-like-prompt">'+prompt+'</span>';
+        var text = terminal.textContent;
+        text = text.split('\n').map( function(line){return (prompt+'<span class="terminal-like-shell-body">'+line+'</span>')}).join('\n');
 
         var textArea = document.createElement('div');
         textArea.className = 'terminal-like-textArea';

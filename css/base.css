@@ -1,7 +1,7 @@
 .terminal-like{
-    width: 100%;
-    margin: auto;
-    border-radius: 10px !important;
+    width: 70%;
+    padding-bottom: 1px;
+    border-radius: 5px !important;
     box-shadow: inset 0 1px 0 rgba(255,255,255,0.6),0 6px 13px 4px rgba(0,0,0,0.56),0 0 0 1px rgba(0,0,0,0.3);
 }
 
@@ -25,14 +25,26 @@
     border-top-left-radius: inherit;
 }
 
-.terminal-like .terminal-like-button{
+.terminal-like .terminal-like-buttons{
     width: 20%;
     text-align: center;
+    margin-bottom: 3px;
     display:inline-block;
     border-top-right-radius: inherit;
 }
 
-.terminal-like .prompt{
+.terminal-like .terminal-like-button{
+    font-weight: 900;
+    font-family: monospace;
+    margin-right: 2px;
+    width: 20px;
+    height: 20px;
+    margin-left: 2px;
+}
+
+.terminal-like .terminal-like-prompt{
+    padding-left: 2%;
+    padding-right: 20px;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -42,10 +54,12 @@
 }
 
 .terminal-like .terminal-like-textArea{
-    background-color: black;
-    color: white;
-    border-bottom-left-radius: inherit;
-    border-bottom-right-radius: inherit;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    margin: 3px 3px 3px 3px;
+}
+
+.terminal-like .terminal-like-shell-body{
 }
 
 
