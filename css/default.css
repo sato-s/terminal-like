@@ -1,6 +1,13 @@
 @import "base.css";
 .terminal-like-header {
-    background-color: black;
-    font-family: sans-serif;
+}
+
+.terminal-like-title{
     color: white;
+    background-color: blue;
+}
+
+.terminal-like-button{
+    color: white;
+    background-color: blue;
 }

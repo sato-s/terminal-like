@@ -8,23 +8,18 @@ function replace() {
         new_terminal.className = 'terminal-like';
 
         // terminal title
-        var title = document.createElement('div');
+        var title = document.createElement('span');
         title.innerText = 'Terminal ~';
-        // terminal bottons
-        var button = document.createElement('div');
+        title.className = 'terminal-like-title';
+        // terminal buttons
+        var button = document.createElement('span');
         button.innerText = '*';
+        button.className = 'terminal-like-button';
         // terminal header
-        var titleBar = document.createElement('table');
-        titleBar.className='terminal-like-header'
-        titleBar.cellPadding = 0;
-        titleBar.cellSpacing = 0;
-        var row = titleBar.insertRow(0);
-        var cell1=row.insertCell(0);
-        cell1.className = 'terminal-like-title';
-        cell1.appendChild(title);
-        var cell2=row.insertCell(1);
-        cell2.className = 'terminal-like-button';
-        cell2.appendChild(button);
+        var titleBar = document.createElement('div');
+        titleBar.className='terminal-like-header';
+        titleBar.appendChild(title);
+        titleBar.appendChild(button);
 
 
         // terminal body
