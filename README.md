@@ -18,8 +18,13 @@ PRE tag with "terminal-like" class is automatically converted into terminal-like
 
 ```html
 <pre class="terminal-like">
-echo "this is what you want to display"
-</pre>
+wget https://www.example.com/terminal-like.tar.gz
+tar zxf terminal-like.tar.gz
+
+cd terminal-like
+./configure
+make
+sudo make install</pre>
 ```
 
 ## License
