@@ -1,5 +1,6 @@
 
 function terminalLike(options) {
+    "use strict"
     if (typeof options ==='undefined' ) options = {};
     if (typeof options.prompt ==='undefined') options.prompt = '[user@localhost ~]$';
 
