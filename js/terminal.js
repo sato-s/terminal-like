@@ -2,9 +2,9 @@
 function terminalLike(options) {
     "use strict"
     // argument handling
-    if (typeof options ==='undefined' ) options = {};
-    if (typeof options.prompt ==='undefined') options.prompt = '[user@localhost ~]$';
-
+    if (typeof options === 'undefined' ) options = {};
+    if (typeof options.prompt === 'undefined') options.prompt = '[user@localhost ~]$';
+    if (typeof options.title === 'undefined') options.title = 'Terminal ~ '
 
     var terminals = document.getElementsByClassName('terminal-like');
     var new_terminals = [];
@@ -15,7 +15,7 @@ function terminalLike(options) {
 
         // terminal title
         var title = document.createElement('span');
-        title.innerText = 'Terminal ~';
+        title.innerText = options.title;
         title.className = 'terminal-like-title';
         // terminal buttons
         var buttons = document.createElement('span');
