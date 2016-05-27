@@ -24,7 +24,7 @@ function terminalLike(options) {
         closeButton.className = 'terminal-like-button';
         closeButton.innerHTML = '&times;';
         var minimizeButton = document.createElement('span')
-        minimizeButton.innerText = '_';
+        minimizeButton.innerHTML = '&horbar;';
         minimizeButton.className = 'terminal-like-button';
         var maximizeButton = document.createElement('span')
         maximizeButton.innerHTML = '&Square;';
