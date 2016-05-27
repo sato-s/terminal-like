@@ -29,8 +29,8 @@ function terminalLike(options) {
         var maximizeButton = document.createElement('span')
         maximizeButton.innerHTML = '&Square;';
         maximizeButton.className = 'terminal-like-button';
-
-		buttons.appendChild(minimizeButton);
+        
+        buttons.appendChild(minimizeButton);
         buttons.appendChild(maximizeButton);
         buttons.appendChild(closeButton);
 
