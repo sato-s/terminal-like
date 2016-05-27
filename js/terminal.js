@@ -30,8 +30,8 @@ function terminalLike(options) {
         maximizeButton.innerHTML = '&Square;';
         maximizeButton.className = 'terminal-like-button';
 
+		buttons.appendChild(minimizeButton);
         buttons.appendChild(maximizeButton);
-        buttons.appendChild(minimizeButton);
         buttons.appendChild(closeButton);
 
 
