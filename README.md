@@ -4,6 +4,8 @@ Convert your code snippets into terminal-like style.
 
 ![Converted terminal-like code snippet sample](https://github.com/sato-s/terminal-like/blob/master/sample.png)
 
+[Demo](http://sato-s.github.io/terminal-like/)
+
 ## Usage
 
 Add this lines to your HTML header. 
